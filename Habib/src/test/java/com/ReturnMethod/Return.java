@@ -16,8 +16,9 @@ public static void main(String[] args) {
 	
 	 Return obj = new  Return ();
 	 obj.add();
+	 String abc=obj.add();
 	 
-	
+	//System.out.println(abc);
 	System.out.println(obj.add());
 }	
 

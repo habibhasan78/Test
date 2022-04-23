@@ -1,4 +1,6 @@
 package com.home_setup1;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,11 +9,16 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class Selenium_SetUp1 {
+	private static final TimeUnit Seconds = null;
+
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/newtours/index.php");
 	    driver.manage().window().maximize();
+	   // driver.manage().deleteAllCookies();
+	    //driver.switchTo().alert().dismiss();
+	    //driver.manage().timeouts().implicitlyWait(6, Seconds);
 	    driver.findElement(By.xpath("//*[@name='userName']")).sendKeys("titu8321@gmail.com");
 	    driver.findElement(By.xpath("//*[@name='password']")).sendKeys("1234567H");
 	    driver.findElement(By.xpath("//*[@value='Submit']")).click();
@@ -20,7 +27,7 @@ public class Selenium_SetUp1 {
 	    
 	    String actual= driver.findElement(By.xpath("//*[contains(text(),'Login Successfully')]")).getText();
 	  
-	    Assert.assertTrue(actual.contains(expected));
+	    Assert.assertTrue(actual.contains(expected), "not match");
 	    //Assert.assertTrue(actual.contains(expected), "The text did not match");
 	    driver.findElement(By.xpath("//*[@href='reservation.php']")).click();
 
@@ -79,7 +86,7 @@ public class Selenium_SetUp1 {
 	   
 	   String actual1= driver.findElement(By.xpath("//*[contains(text(),'4')]")).getText();
 	   Assert.assertTrue(actual.contains(expected));
-	   driver.quit();
+	   //driver.quit();
 	}  
 }	    
 	    

@@ -6,14 +6,16 @@ public class String_Method {
 		String name="sheikh Mohammed Rassel";
 		String name1=new String("sheikh Mohammed Rassel");
 		
-	System.out.println("name: "+name);
-	System.out.println("name1: "+name1);
+	//System.out.println("name: "+name);
+	//System.out.println("name1: "+name1);
 //System.out.println("first charecter: "+name.charAt(0));
 //System.out.println("     lower case: "+name.toLowerCase());
 //System.out.println("     upper case: "+name.toUpperCase());
 //System.out.println("         length: "+name.length());
 //System.out.println(" last charecter: "+name.charAt(21));
 //System.out.println("substring: "+name.substring(1, 2));
+name.toString();
+System.out.println(name);
 
 //-------------------------------------------------------
 	

@@ -17,9 +17,10 @@ static boolean palindrom(String str) {
 	
 }
 public static void main(String[] args) {
-	String abc="momk";
-	abc=abc.toLowerCase();
-	if(palindrom(abc))
+	String abc="Mom";
+	//abc=abc.toLowerCase();
+	
+	if(abc.equalsIgnoreCase(abc))
 	System.out.println("palindrome");
 	else {
 		System.out.println("not palindrome");

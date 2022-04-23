@@ -23,25 +23,33 @@ public class Loop {
 //		int i =10;
 //		
 //		do {
-//			System.out.println("we are in the do loop ");
+//			System.out.println("we are in the do loop "+i);
+//		i--;
+//		}
+//		while(i>5);
+		
+//	int i =10;
+//		
+//		do {
+//			System.out.println("we are in the do loop "+i);
 //		i++;
 //		}
-//		while(i<13);
+//		while(i<14);
 ////-----------------------------------------------------------
 	//	enhence loop
-	//	-----------
-		/*String[] abc= {"jahid","habib","nahar","tanvir","mahabuba"};
-		//System.out.println(abc[]);
-		for(String xyz:abc){
-		System.out.println(xyz);
+		//-----------
+//		String[] abc= {"jahid","habib","nahar","tanvir","mahabuba"};
+//		//System.out.println(abc[3]);
+//		for(String xyz:abc){
+//		System.out.println(xyz);
 		
-		}*/
+	//	}
 //---------------------------		
 //		int[] abc= {2,3,5,6};
 //		for(int xyz:abc) {
 //			System.out.println(xyz);
-			
-//		}
+//			
+		}
 	}
 
-}
+//}

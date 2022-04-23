@@ -2,7 +2,7 @@ package com.PolyMorPhism;
 
 public class PolymorphismOverridding1 extends PolymorphismOverridding {
 
-	  String qulification;
+	  //String qulification;
 	
 	  
 	 void displayInformation() {
@@ -13,9 +13,11 @@ public class PolymorphismOverridding1 extends PolymorphismOverridding {
 	    	 
 	     }
 	  public static void main(String[] args) {
-	    	 PolymorphismOverridding t= new PolymorphismOverridding1();
-	    	 t.displayInformation();
-		  //PolymorphismOverridding obj = new PolymorphismOverridding();
+		  PolymorphismOverridding t= new PolymorphismOverridding1();
+	    	 t.displayInformation("Habib");
+	    	 PolymorphismOverridding t1= new PolymorphismOverridding1();
+	    	 t.displayInformation(40);
+		 // PolymorphismOverridding obj = new PolymorphismOverridding();
 			//obj.displayInformation();	 
 
 }
